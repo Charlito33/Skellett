@@ -25,7 +25,7 @@ import ch.njol.skript.util.Getter;
 public class EvtFishing extends SkriptEvent {
 
 	static {
-		Skript.registerEvent("Fishing", EvtFishing.class, PlayerFishEvent.class, "[player] fish[ing] [state[s] [of] %-fishingstates%]");
+		Skript.registerEvent("Fishing", EvtFishing.class, PlayerFishEvent.class, "[player] fish[ing] [state[s] [of] %fishingstates%]");
 
 		EventValues.registerEventValue(PlayerFishEvent.class, FishHook.class, new Getter<FishHook, PlayerFishEvent>() {
 			@Override
